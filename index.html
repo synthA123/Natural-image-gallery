@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Image Gallery </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1> Animated Natural Image</h1>
+
+    </header>
+    <section class="gallery">
+        <div class="image">
+            <img src="photo-1.avif" alt="Image1">
+            <div class="caption">Beautiful Universe</div>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="image">
+            <img src="photo-2.avif" alt="Image 2">
+            <div class="caption">Our Galaxy</div>
+        </div>
+        <div class="image">
+            <img src="photo-3.webp" alt="Image 3">
+            <div class="caption">Space</div>
+        </div>
+        <div class="image">
+            <img src="photo-4.webp" alt="Image 4">
+            <div class="caption">Beautiful Universe</div>
+        </div>
+        <div class="image">
+            <img src="photo-5.webp" alt="Image 5">
+            <div class="caption">Beautiful Universe</div>
+        </div>
+        <div class="image">
+            <img src="photo-6.jpeg" alt="Image 6">
+            <div class="caption">Beautiful Nature Lights</div>
+        </div>
+        <div class="image">
+            <img src="photo-7.jpeg" alt="Image 7">
+            <div class="caption">Pathway</div>
+        </div>
+        <div class="image">
+            <img src="photo-8.jpeg" alt="Image 8">
+            <div class="caption">City Lights</div>
+        </div>
+        <div class="image">
+            <img src="photo-9.jpeg" alt="Image 9">
+            <div class="caption">Just loking like waah</div>
+        </div>
+        <div class="image">
+            <img src="photo-11.jpeg" alt="Image 10">
+            <div class="caption">City Lights</div>
+        </div>
+        <div class="image">
+            <img src="WhatsApp Image 2025-03-01 at 17.41.55 (1).jpeg" alt="Image 11">
+            <div class="caption">My Image1</div>
+        </div>
+        <div class="image">
+            <img src="WhatsApp Image 2025-03-01 at 17.41.55 (2).jpeg" alt="Image 12">
+            <div class="caption"> My Image City Lights</div>
+        </div>
+        div class="image">
+            <img src="WhatsApp Image 2025-03-01 at 17.41.55.jpeg" alt="Image 13">
+            <div class="caption">City My Image Lights</div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="image">
+            <img src="pexels-soldiervip-1308881.jpg" alt="Image 3">
+            <div class="caption"> Beautiful girl Nature Bliss</div>
+        </div>
+        <div class="image">
+            <img src="photo-3.webp" alt="Image 4">
+            <div class="caption">Ocean Waves</div>
+        </div>
+        <div class="image">
+            <img src="photo-9.jpeg" alt="Image 5">
+            <div class="caption">Golden Hour</div>
+        </div>
+
+
+        
+
+    </section>
+    <!-- Lightbox Container (Initially Hidden) -->
+<div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Expanded Image">
+</div>
+<!-- JavaScript for Lightbox Effect -->
+<script>
+    function openLightbox(imgSrc) {
+        document.getElementById("lightbox-img").src = imgSrc;
+        document.getElementById("lightbox").classList.add("active");
+    }
+
+    function closeLightbox() {
+        document.getElementById("lightbox").classList.remove("active");
+    }
+
+    // Add event listener to all images
+    document.querySelectorAll(".image img").forEach(img => {
+        img.addEventListener("click", function () {
+            openLightbox(this.src);
+        });
+    });
+</script>
+    
+    
+</body>
+</html>
